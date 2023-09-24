@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
+@font-face {
+  font-family: 'LatoWebBlack';
+  src: url("../fonts/Lato-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+@fot-face {
+  font-family: 'CinzelWebRegular';
+  src: url("../fonts/CinzelDecorative-Regular-webfont.eot");
+  src: url("../fonts/CinzelDecorative-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CinzelDecorative-Regular-webfont.woff") format("woff"), url("../fonts/CinzelDecorative-Regular-webfont.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+body {
+  font-family: Sans-Serif; }
+
+h1, h2, h3, h4, h5 {
+  color: #343434;
+  font-family: CinzelWebRegular; }
+
+p {
+  font-family: LatoWebRegular;
+  color: #343434; }
+
+a {
+  font-family: LatoWebBlack;
+  color: #343434;
+  text-decoration: none; }

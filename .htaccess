@@ -1,0 +1,37 @@
+# BEGIN WP Hide & Security Enhancer
+<IfModule mod_rewrite.c> 
+RewriteEngine On 
+RewriteBase / 
+#WriteCheckString:1542849981_27571
+RewriteRule .* - [E=HTTP_MOD_REWRITE:On]
+
+RewriteRule ^template/qakp-gjnk-theme/(.+) /wp-content/themes/qakp-gjnk-theme/$1 [L,QSA]
+
+RewriteRule ^qakp_plugins/module1/(.+) /wp-content/plugins/acf-field-date-time-picker/$1 [L,QSA]
+RewriteRule ^qakp_plugins/module2/(.+) /wp-content/plugins/advanced-custom-fields/$1 [L,QSA]
+RewriteRule ^qakp_plugins/module3/(.+) /wp-content/plugins/classic-editor/$1 [L,QSA]
+
+RewriteRule ^my_inc/(.+) /wp-includes/$1 [L,QSA]
+
+RewriteRule ^uploads/(.+) /wp-content/uploads/$1 [L,QSA]
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^readme.html /index.php?wph-throw-404 [L]
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^license.txt /index.php?wph-throw-404 [L]
+
+RewriteRule ^qakp_content/(.+) /wp-content/$1 [L,QSA]
+</IfModule> 
+
+# END WP Hide & Security Enhancer
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
